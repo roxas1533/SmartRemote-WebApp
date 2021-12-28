@@ -129,6 +129,12 @@ def sendSignal():
 
 
 if __name__ == "__main__":
-    with open("data.json") as f:
-        remoteData = json.load(f)
+    try:
+        with open("data.json") as f:
+            remoteData = json.load(f)
+    except FileNotFoundError:
+        remoteData = {}
+        with open("data.json", "w") as f:
+            json.dump(remoteData, f, indent=4)
+
     app.run(host="0.0.0.0", debug=True)
