@@ -1,0 +1,21 @@
+<div class="remote-button bg-dark px-3 py-2" data={{uuid}}>
+    <div class="d-flex justify-content-end">
+        <div class="fs-3 me-auto text-light">{{name}}</div>
+        <div class="btn btn-success me-4 send-signal">
+            送信
+        </div>
+        <div>
+            <div class="d-flex align-items-center justify-content-center fa-ellipsis-wrapper ms-auto p-1 rounded-circle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-lg fas fa-ellipsis-h " style="color:#f8f9fa;"></i>
+            </div>
+            <ul class=" border border-info dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton1">
+                <li><button class="dropdown-item edit-remote-button" type="button">編集</button></li>
+                <li><button class="dropdown-item delete-remote-button" type="button">削除</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

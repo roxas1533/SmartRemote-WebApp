@@ -1,0 +1,51 @@
+body {
+    /* 「BIZ UDPゴシック」をWindowsで指定 */
+    font-family: "Helvetica Neue",
+      Arial,
+      "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans",
+      "BIZ UDPGothic",
+      Meiryo,
+      sans-serif;
+  }
+
+.overlay{
+    left:0;
+    top:0;
+    background-color: #000000B0;
+}
+.editor{
+    background-color: #222222;
+
+    max-width: 100%;
+    /* min-width: 500px; */
+    width: 50%;
+    min-height: 180px;
+}
+@media (max-width:750px) {
+    .editor{
+        width: 100%;
+    }  
+ }
+.fa-times-wrapper:hover,.fa-ellipsis-wrapper:hover {
+background-color: #95c8f57c;
+}
+.fa-times-wrapper {
+    width:38px;
+    height:38px;
+}
+
+.fa-ellipsis-wrapper{
+    width:30px;
+    height:30px;
+}
+.fa-ellipsis-h::after {
+    display: none;
+}
+
+.confirm-btn{
+    width:101px
+}
+.remote{
+    width: 80%;
+}

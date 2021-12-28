@@ -1,0 +1,27 @@
+<div class="remote bg-dark px-3 py-2" data={{uuid}}>
+    <div class="d-flex">
+        <div class="fs-3 text-light">{{name}}</div>
+        <div class="ms-auto">
+            <div class="d-flex align-items-center justify-content-center fa-ellipsis-wrapper ms-auto p-1 rounded-circle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-lg fas fa-ellipsis-h" style="color:#f8f9fa;"></i>
+            </div>
+            <ul class="border border-info dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton1">
+                <li><button class="dropdown-item edit-remote-button" type="button">編集</button></li>
+                <li><button class="dropdown-item delete-remote-button" type="button">削除</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn btn-warning dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#button-List-{{uuid}}">
+        ボタン
+    </div>
+    <div class="collapse" id="button-List-{{uuid}}">
+        <div class="remote-button-area">
+            {% for button in buttons %}
+            {{button|safe}}
+            {% endfor %}
+        </div>
+        <button type="button" class="btn btn-primary new-button">ボタンの登録</button>
+    </div>
+</div>
